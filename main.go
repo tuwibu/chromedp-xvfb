@@ -21,8 +21,8 @@ func main() {
 
 func RunThread() error {
 	ctx, cancel, err := cu.New(cu.NewConfig(
-	// Remove this if you want to see a browser window.
-	//cu.WithHeadless(),
+		// Remove this if you want to see a browser window.
+		cu.WithHeadless(),
 	))
 	if err != nil {
 		return err
